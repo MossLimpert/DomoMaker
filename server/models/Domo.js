@@ -31,3 +31,5 @@ DomoSchema.statics.toAPI = (doc) => ({
     age: doc.age,
 });
 
+DomoModel = mongoose.model('Domo', DomoSchema);
+module.exports = DomoModel;
